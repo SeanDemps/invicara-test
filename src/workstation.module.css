@@ -1,0 +1,23 @@
+.dot:before {
+  --dot-size: 0.7rem;
+  content: "";
+  position: relative;
+  display: inline-block;
+  width: var(--dot-size);
+  height: var(--dot-size);
+  line-height: calc(var(--dot-size) * 1.6);
+  font-size: calc(var(--dot-size) * 1.6);
+  top: calc((var(--dot-size) / 2) - 3px);
+  border-radius: 100%;
+  border: solid white;
+  color: #fff;
+  background-color: var(--dot-color, gray);
+}
+
+.dot.green {
+  --dot-color: green;
+}
+
+.dot.red {
+  --dot-color: red;
+}
